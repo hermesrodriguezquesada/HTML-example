@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Examples| From-Elements</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../index.html" class="brand-link">
+      <span class="brand-text font-weight-light">HTML Examples</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+  
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li> 
+		      <li class="nav-item">
+            <a href="./link.html" class="nav-link">
+              <i class="nav-icon fas fa-link"></i>
+              <p>
+                Link
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <a href="./list.html" class="nav-link">
+              <i class="nav-icon fas fa-list"></i>
+              <p>
+                List
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <a href="./from.html" class="nav-link active">
+              <i class="nav-icon fas fa-check"></i>
+              <p>
+                From Elements
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./iframe.html" class="nav-link">
+              <i class="nav-icon fas fa-code"></i>
+              <p>
+                IFrame
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <a href="./disablebutton.html" class="nav-link">
+              <i class="nav-icon fas fa-toggle-off"></i>
+              <p>
+                Disable Button
+              </p>
+            </a>
+          </li>  
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>From-Elements-Examples</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+              <li class="breadcrumb-item active">From-Elements</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">From Elements</h3>
+
+          <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-body">
+          <h2>From elements:</h2>
+          <div class="row mt-5 mx-5">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <h3>Select: </h3>
+              <select>
+                <option value="Seattle">Seattle</option>
+                <option value="Chicago">Chicago</option>
+                <option value="New York">New York</option>
+              </select>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <h3>Input text </h3>
+              <input type="text" placeholder="My type is text">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <h3>Input number </h3>
+              <input type="number" placeholder="My type is number">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <h3>Input password </h3>
+              <input type="password" placeholder="My type is password">
+            </div>
+          </div>
+          <div class="row mt-5 mx-5 pb-5">
+            <div class="col-12 col-sm-6 col-lg-3 mt-4">
+              <h3>Textarea:</h3>
+              <textarea id="" cols="15" rows="5" placeholder="My area"></textarea>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4">
+              <h3>Radio buttons</h3>
+              <label><input type="radio" name="apple">Apple</label>
+              <label><input type="radio" name="orange">Orange</label>
+              <label><input type="radio" name="grapes">Grapes</label>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4">
+              <h3>Radio group</h3>
+              <label><input type="radio" name="group">Apple</label>
+              <label><input type="radio" name="group">Orange</label>
+              <label><input type="radio" name="group">Grapes</label>
+            </div>
+      
+            <div class="col-12 col-sm-6 col-lg-3 mt-4">
+              <h3>Checkboxes:</h3>
+              <label><input type="checkbox" name="checks">Windows</label>
+              <label><input type="checkbox" name="checks">Mac OS</label>
+              <label><input type="checkbox" name="checks">Linux</label>
+            </div>
+      
+            <div class="col-12 col-sm-6 col-lg-3 mt-4">
+              <h3>Button (default)</h3>
+              <button type="button">Ok</button>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4">
+              <h3>Button (aria-selected)</h3>
+              <button type="button" aria-selected="true">Ok</button>
+            </div>
+      
+            <div class="col-12 col-sm-6 col-lg-3 mt-4">
+              <h3>Reset</h3>
+              <button type="reset">Clear</button>
+      
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4">
+              <h3>Submit</h3>
+              <button type="submit">Send</button>
+            </div>
+      
+          </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+          Footer
+        </div>
+        <!-- /.card-footer-->
+      </div>
+      <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 1.0.0
+    </div>
+    <strong>Copyright &copy; 2022</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+</body>
+</html>
