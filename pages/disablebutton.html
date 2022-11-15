@@ -100,46 +100,76 @@
 
     <!-- Main content -->
     <section class="content">
+      <div class="card card-primary">
+        <div class="card-header">
+          <h3 class="card-title">Disable button (html disable)</h3>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4  mt-2 mb-2">
+          <button id="btnOk" disabled="">Ok</button>
+        </div>
+      </div>
 
-      <!-- Default box -->
-      <div class="card">
+      <div class="card card-secondary">
         <div class="card-header">
           <h3 class="card-title">Disable Button</h3>
         </div>
-        <div class="card-body">
-          <h2>Disable button (html disable)</h2>
-          <button id="btnOk" disabled="">Ok</button>
-          <h3>Other</h3>
-          <h4>Using a div wrapping options</h4>
-          <ul role="listbox">
-            <div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <h4>Using a div wrapping options</h4>
+            <ul role="listbox">
+              <div>
+                <li role="option">Fruits</li>
+                <li role="option">Meat</li>
+                <li role="option">Pets</li>
+              </div>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <h4>Not using a div wrapping options</h4>
+            <ul role="listbox">
               <li role="option">Fruits</li>
               <li role="option">Meat</li>
               <li role="option">Pets</li>
-            </div>
-          </ul>
-          <h4>Not using a div wrapping options</h4>
-          <ul role="listbox">
-            <li role="option">Fruits</li>
-            <li role="option">Meat</li>
-            <li role="option">Pets</li>
-          </ul>
-          <div tabindex="0">
-            My text content in the first container <button onclick="alert('Clicked')">my button</button>
-            <div role="button" tabindex="0" onclick="alert('Clicked go to')">Go to </div>
+            </ul>
           </div>
-          <div tabindex="0">
-            My text content in the first container <button onclick="alert('Clicked')">my button</button>
-            <div role="button" tabindex="0" onclick="alert('Clicked go to')">Go to </div>
-          </div>
-          <article>
-            <p>Paragraph in article</p>
-          </article>
         </div>
-        <!-- /.card-body -->
-      </div>
-      <!-- /.card -->
 
+      </div>
+
+      <div class="card card-primary">
+        <div class="card-header">
+          <h3 class="card-title">Tabindex</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-5 ml-3">
+            <div tabindex="0">
+              My text content in the first container <button onclick="alert('Clicked')">my button</button>
+              <div role="button" tabindex="0" onclick="alert('Clicked go to')">Go to </div>
+            </div>
+          </div>
+          <div class="col-md-5 ml-3">
+            <div tabindex="0">
+              My text content in the first container <button onclick="alert('Clicked')">my button</button>
+              <div role="button" tabindex="0" onclick="alert('Clicked go to')">Go to </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-secondary">
+        <div class="card-header">
+          <h3 class="card-title">Article</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-6 ml-3">
+            <article>
+              <p>Paragraph in article</p>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </div>
     </section>
     <!-- /.content -->
   </div>
