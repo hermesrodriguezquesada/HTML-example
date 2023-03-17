@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML | Example</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/adminlte.min.css">
+</head>
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__wobble brand-image img-circle" src="img/logo-blanco.jpg" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-dark">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index2.html" class="brand-link">
+      <img src="img/logo-negro.jpg" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">HTML-Examples</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-header">EXAMPLES</li>
+          <li class="nav-item">
+            <a href="index2.html" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Inicio
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#section-links" class="nav-link">
+              <i class="nav-icon fas fa-link"></i>
+              <p>
+                Link
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#sections-list" class="nav-link">
+              <i class="nav-icon fas fa-list"></i>
+              <p>
+                List
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#sections-form" class="nav-link">
+              <i class="nav-icon fas fa-check"></i>
+              <p>
+                Form Elements
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#sections-iframe" class="nav-link">
+              <i class="nav-icon fas fa-code"></i>
+              <p>
+                IFrame
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#sections-disable-buttons" class="nav-link">
+              <i class="nav-icon fas fa-toggle-off"></i>
+              <p>
+                Disable Buttons
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Examples</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <!-- Section Link -->
+    <section class="content" id="section-links">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Links</h5>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-md-3">
+                    <h2>Links test for VO</h2>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-3">
+                    <h4>Link without href attr</h4>
+                    <a>Go home</a>
+                  </div>
+
+                  <div class="clearfix hidden-md-up"></div>
+        
+                  <div class="col-12 col-sm-6 col-md-3">
+                    <h4>Link with null href</h4>
+                    <a href="">Go home</a>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-3">
+                    <h4>Link with valid href attr</h4>
+                    <a href="http://google.com">Go home</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section List -->
+    <section class="content" id="sections-list">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Lists</h5>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card card-primary">
+                  <div class="card-header">
+                    <h3 class="card-title">Lists-1</h3>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <h3>Item List(ul):</h3>
+                      <ul>
+                        <li>Google</li>
+                        <li>Drive</li>
+                        <li>Gmail</li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h3>Item List(ol):</h3>
+                      <ol>
+                        <li>Google</li>
+                        <li>Drive</li>
+                        <li>Gmail</li>
+                      </ol>
+                    </div>
+                    <div class="col-12">
+                      <h3>Link list(ul):</h3>
+                      <ul>
+                        <li><a href="http://google.com">Google</a></li>
+                        <li><a href="http://drive.google.com">Drive</a></li>
+                        <li><a href="http://mail.google.com">Gmail </a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12">
+                      <h3>Link list(ul):</h3>
+                      <ul style="list-style-type:none">
+                        <li><a href="http://google.com">Google</a></li>
+                        <li><a href="http://drive.google.com">Drive</a></li>
+                        <li><a href="http://mail.google.com">Gmail </a></li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="card card-secondary">
+                  <div class="card-header">
+                    <h3 class="card-title">Lists-2</h3>
+                  </div>
+                  <h4 class="ml-4">Definition list:</h4>
+                  <dl aria-label="fruits sold" class="ml-4">
+                    <dt>Apple</dt>
+                    <dd>10</dd>
+                    <dt>Pinapple</dt>
+                    <dd>8</dd>
+                    <dt>Peach</dt>
+                    <dd>12</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Form-Elements -->
+    <section class="content" id="sections-form">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Form Elements</h5>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card card-primary">
+                  <div class="card-header">
+                    <h3 class="card-title">Select</h3>
+                  </div>
+                  <div class="card-body">
+                      <div class="row mt-1 mx-5">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                          <h3>Select: </h3>
+                          <select>
+                            <option value="Seattle">Seattle</option>
+                            <option value="Chicago">Chicago</option>
+                            <option value="New York">New York</option>
+                          </select>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card card-secondary">
+                  <div class="card-header">
+                    <h3 class="card-title">Input</h3>
+                  </div>
+                  <div class="card-body">
+                      <div class="row mt-1 mx-5">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                          <h3>Input text </h3>
+                          <input type="text" placeholder="My type is text">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                          <h3>Input number </h3>
+                          <input type="number" placeholder="My type is number">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                          <h3>Input password </h3>
+                          <input type="password" placeholder="My type is password">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="card card-primary">
+                  <div class="card-header">
+                    <h3 class="card-title">Checkboxes and Ratio Buttons</h3>
+                  </div>
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="col-12 col-sm-6 col-lg-6">
+                            <h4>Checkboxes:</h4>
+                            <label><input type="checkbox" name="checks">Windows</label>
+                            <br>
+                            <label><input type="checkbox" name="checks">Mac OS</label>
+                            <br>
+                            <label><input type="checkbox" name="checks">Linux</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="col-12 col-sm-6 col-lg-4">
+                            <h3>Radio buttons</h3>
+                            <label><input type="radio" name="apple">Apple</label>
+                            <label><input type="radio" name="orange">Orange</label>
+                            <label><input type="radio" name="grapes">Grapes</label>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="col-12 col-sm-6 col-lg-4">
+                            <h3>Radio group</h3>
+                            <label><input type="radio" name="group">Apple</label>
+                            <label><input type="radio" name="group">Orange</label>
+                            <label><input type="radio" name="group">Grapes</label>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              
+                </div>
+                <div class="card card-secondary">
+                  <div class="card-header">
+                    <h3 class="card-title">Buttons</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3>Button (default)</h3>
+                        <div class="col-12 col-sm-6 col-lg-3 mt-4">
+                          <button type="button">Ok</button>
+                        </div>
+                      </div>
+      
+                      <div class="col-md-6">
+                        <h3>Button (aria-selected)</h3>
+                        <div class="col-12 col-sm-6 col-lg-3 mt-4"> 
+                          <button type="button" aria-selected="true">Ok</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="col-12 col-sm-6 col-lg-3 mt-4">
+                          <h3>Reset</h3>
+                          <button type="reset">Clear</button>
+                  
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="col-12 col-sm-6 col-lg-3 mt-4">
+                          <h3>Submit</h3>
+                          <button type="submit">Send</button>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section IFrame -->
+    <section class="content" id="sections-iframe">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Iframe</h5>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card card-primary">
+                  <div class="card-header">
+                    <h3 class="card-title">Iframe</h3>
+                  </div>
+                  <div class="row">                    
+                    <h3>Iframe with title</h3>
+                    <div class="col-12">
+                      <iframe id="inlineFrameExample" title="wikipedia iframe" src="https://en.wikipedia.org/wiki/Main_Page" width="100%">
+                      </iframe>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <h3>Iframe without title</h3>
+                      <div class="col-12">
+                        <iframe id="inlineFrameExample2" title="" src="https://en.wikipedia.org/wiki/Main_Page" width="100%">
+                        </iframe>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section Disable-Buttons -->
+    <section class="content" id="sections-disable-buttons">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title">Disable Buttons</h5>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card card-primary">
+                  <div class="card-header">
+                    <h3 class="card-title">Disable button (html disable)</h3>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4  mt-2 mb-2">
+                    <button id="btnOk" disabled="">Ok</button>
+                  </div>
+                </div>
+                <div class="card card-secondary">
+                  <div class="card-header">
+                    <h3 class="card-title">Disable Button</h3>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <h4>Using a div wrapping options</h4>
+                      <ul role="listbox">
+                        <div>
+                          <li role="option">Fruits</li>
+                          <li role="option">Meat</li>
+                          <li role="option">Pets</li>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <h4>Not using a div wrapping options</h4>
+                      <ul role="listbox">
+                        <li role="option">Fruits</li>
+                        <li role="option">Meat</li>
+                        <li role="option">Pets</li>
+                      </ul>
+                    </div>
+                  </div>
+          
+                </div>
+                <div class="card card-primary">
+                  <div class="card-header">
+                    <h3 class="card-title">Tabindex</h3>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5 ml-3">
+                      <div tabindex="0">
+                        My text content in the first container <button onclick="alert('Clicked')">my button</button>
+                        <div role="button" tabindex="0" onclick="alert('Clicked go to')">Go to </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5 ml-3">
+                      <div tabindex="0">
+                        My text content in the first container <button onclick="alert('Clicked')">my button</button>
+                        <div role="button" tabindex="0" onclick="alert('Clicked go to')">Go to </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-secondary">
+                  <div class="card-header">
+                    <h3 class="card-title">Article</h3>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 ml-3">
+                      <article>
+                        <p>Paragraph in article</p>
+                      </article>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2022.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 1.0.0
+    </div>
+  </footer>
+</div>
+
+
+<!-- Script for function button-->
+<script>
+	
+	document.addEventListener('click',(ev)=>{
+		if(ev.ctrlKey)
+            ev.target.style.outline = 'red thin solid'
+	})
+
+	document.addEventListener('click',(ev)=>{
+		if(ev.altKey)
+           { 
+			console.log(ev.target)
+			ev.target.parentElement.remove()
+		}
+	})
+
+// dsfsdfsf
+
+const table = document.getElementsByTagName("table")[0]
+
+const tableArr = Array.prototype.slice.call( table.children[0].children )
+let idsArr = []
+
+//tableArr[1].children[0].innerHTML
+
+</script>
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="js/adminlte.js"></script>
+
+<!-- PAGE PLUGINS -->
+<!-- jQuery Mapael -->
+<script src="js/fonts-prueba.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/raphael.min.js"></script>
+<script src="js/jquery.mapael.min.js"></script>
+<script src="js/usa_states.min.js"></script>
+<!-- ChartJS -->
+<script src="js/Chart.min.js"></script>
+
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="js/dashboard2.js"></script>
+</body>
+</html>
